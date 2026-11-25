@@ -1,0 +1,12 @@
+[build]
+  publish = "."
+
+[[redirects]]
+  from = "/gestion-lotus"
+  to = "/admin/"
+  status = 200
+
+[[redirects]]
+  from = "/gestion-lotus/"
+  to = "/admin/"
+  status = 200

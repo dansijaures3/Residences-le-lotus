@@ -1,0 +1,39 @@
+backend:
+  name: git-gateway
+  branch: main
+media_folder: "uploads"
+public_folder: "/uploads"
+site_url: /
+display_url: /
+locale: "fr"
+collections:
+  - name: "site"
+    label: "Contenu du site"
+    files:
+      - name: "site_content"
+        label: "Informations générales et appartements"
+        file: "content/site.json"
+        format: "json"
+        fields:
+          - { label: "Titre principal", name: "hero_title", widget: "string" }
+          - { label: "Texte d'accueil", name: "hero_text", widget: "text" }
+          - { label: "Titre vidéo", name: "video_title", widget: "string" }
+          - { label: "Texte vidéo", name: "video_text", widget: "text" }
+          - { label: "Localisation", name: "location", widget: "string" }
+          - { label: "Plus Code", name: "plus_code", widget: "string" }
+          - { label: "Téléphone 1", name: "phone_1", widget: "string" }
+          - { label: "Téléphone 2", name: "phone_2", widget: "string" }
+          - { label: "E-mail", name: "email", widget: "string" }
+          - label: "Appartements et tarifs (FCFA / nuit)"
+            name: "apartments"
+            widget: "list"
+            min: 3
+            max: 3
+            fields:
+              - { label: "Nom", name: "name", widget: "string" }
+              - { label: "Prix par nuit (FCFA)", name: "price", widget: "number", value_type: "int", min: 0 }
+          - label: "Photos supplémentaires de la galerie"
+            name: "gallery_images"
+            widget: "list"
+            required: false
+            field: { label: "Photo", name: "image", widget: "image" }

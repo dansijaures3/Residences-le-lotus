@@ -1,0 +1,26 @@
+{
+  "hero_title": "Bienvenue aux Résidences Le Lotus",
+  "hero_text": "Un cadre élégant et confortable pour vos séjours à Cotonou.",
+  "video_title": "Découvrez les Résidences Le Lotus",
+  "video_text": "Lancez la vidéo pour découvrir la résidence.",
+  "location": "Agla Akplomey, Cotonou, Bénin",
+  "plus_code": "99J4+JM4 Cotonou",
+  "phone_1": "+229 0195810001",
+  "phone_2": "+229 0196010002",
+  "email": "Infos@residenceslelotus.com",
+  "apartments": [
+    {
+      "name": "Appartement Premium – 1 chambre",
+      "price": 30000
+    },
+    {
+      "name": "Suite Deluxe avec baignoire Spa",
+      "price": 40000
+    },
+    {
+      "name": "Appartement Supérieur – 2 chambres",
+      "price": 50000
+    }
+  ],
+  "gallery_images": []
+}
